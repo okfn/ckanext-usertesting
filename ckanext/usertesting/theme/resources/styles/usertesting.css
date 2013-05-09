@@ -1,8 +1,72 @@
+a,
+.btn-link {
+  color: #0f7964;
+}
+.account-masthead {
+  background-color: #0f7964;
+}
+.account-masthead .account ul li {
+  border-left-color: #0c6352;
+}
+.account-masthead .account ul li a {
+  color: #8ad3c5;
+}
+.account-masthead .account ul li a:hover {
+  color: #c4e9e2;
+  background-color: #0c6352;
+}
+.account-masthead .account ul li.notifications a span {
+  background-color: #094c3f;
+}
+.account-masthead .account ul li.notifications a:hover span {
+  background-color: #06352c;
+}
+.masthead,
+.site-footer,
+body {
+  background-color: #14a78a;
+}
+.masthead input[type="text"] {
+  border-color: #0c6352;
+}
+.site-footer,
+.site-footer a,
+.site-footer small {
+  color: #c4e9e2;
+}
+.masthead .navigation .nav-pills li a:hover,
+.masthead .navigation .nav-pills li.active a {
+  background-color: #0f7964;
+}
+.hero .module-dark .module-content {
+  background-color: #14a78a;
+}
+.hero .tags {
+  background-color: #0f7964;
+}
+.hero .search-giant input {
+  border-color: #0c6352;
+}
+/* Buttons */
+.btn-primary {
+  background: #14a78a;
+  border-color: #0f7964;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary.disabled,
+.btn-primary[disabled] {
+  background-color: #0f7964;
+}
 .homepage h3.media-heading {
   margin: 0;
 }
-
 .homepage h3.media-heading i {
   font-size: 20px;
   margin-right: 10px;
+}
+.hero {
+  background: url("/homepage-background.jpg") repeat-x center center;
 }

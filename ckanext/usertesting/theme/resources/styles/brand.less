@@ -1,0 +1,79 @@
+a,
+.btn-link {
+  color: darken(@primary, 10%);
+}
+
+.account-masthead {
+  background-color: darken(@primary, 10%);
+  .account ul li {
+    border-left-color: darken(@primary, 15%);
+    a {
+      color: mix(white, @primary, 50%);
+      &:hover {
+        color: mix(white, @primary, 75%);
+        background-color: darken(@primary, 15%);
+      }
+    }
+    &.notifications a {
+      span {
+        background-color: darken(@primary, 20%);
+      }
+      &:hover span {
+        background-color: darken(@primary, 25%);
+      }
+    }
+  }
+}
+
+.masthead,
+.site-footer,
+body {
+  background-color: @primary;
+}
+
+.masthead {
+  input[type="text"] {
+    border-color: darken(@primary, 15%);
+  }
+}
+
+.site-footer,
+.site-footer a,
+.site-footer small {
+  color: mix(white, @primary, 75%);
+}
+
+.masthead {
+  .navigation .nav-pills li {
+    a:hover,
+    &.active a {
+      background-color: darken(@primary, 10%);
+    }
+  }
+}
+
+.hero {
+  .module-dark .module-content {
+    background-color: @primary;
+  }
+  .tags {
+    background-color: darken(@primary, 10%);
+  }
+  .search-giant input {
+    border-color: darken(@primary, 15%);
+  }
+}
+
+/* Buttons */
+.btn-primary {
+  background: @primary;
+  border-color: darken(@primary, 10%);
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary.disabled,
+.btn-primary[disabled] {
+  background-color: darken(@primary, 10%);
+}
