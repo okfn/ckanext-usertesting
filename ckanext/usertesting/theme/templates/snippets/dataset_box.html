@@ -1,0 +1,24 @@
+{#
+Displays a list of datasets in a box with a title.
+
+title    - the title for the box
+datasets - the list of datasets to display
+
+Example:
+
+  {% snippet 'snippets/dataset_box.html', title='Popular datasets', datasets=h.popular_datasets() %}
+
+#}
+<div class="span6">
+  <div class="box">
+    <section class="group-list module module-narrow module-shallow">
+      <header class="module-heading media">
+        <h3 class="media-heading">
+          <i class="icon-{{ icon }}"></i>
+          {{ title }}
+        </h3>
+      </header>
+      {% snippet 'snippets/package_list.html', packages=datasets, item_class="dataset-item module-content" %}
+    </section>
+  </div>
+</div>

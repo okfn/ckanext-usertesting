@@ -1,0 +1,21 @@
+{% ckan_extends %}
+
+{% block home_image %}
+  <section class="featured media-overlay">
+    <h2 class="media-heading">
+      {% block home_image_caption %}{{ _("Example image") }}{% endblock %}
+    </h2>
+    {% block home_image_content %}
+      <a class="media-image" href="#">
+        <img src="http://placehold.it/420x220" alt="" width="420" height="220">
+      </a>
+    {% endblock %}
+  </section>
+{% endblock %}
+
+{% block secondary_content %}
+  <div class="row group-listing p-bottom">
+    {% snippet 'snippets/dataset_box.html', title='Popular datasets', icon='fire', datasets=h.popular_datasets() %}
+    {% snippet 'snippets/dataset_box.html', title='Latest datasets', icon='time', datasets=h.latest_datasets() %}
+  </div>
+{% endblock %}
